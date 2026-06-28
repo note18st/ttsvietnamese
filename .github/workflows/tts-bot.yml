@@ -25,5 +25,6 @@ jobs:
         # Lấy Token từ GitHub Secrets truyền vào biến môi trường
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}  # <-- THÊM DÒNG NÀY VÀO ĐÂY NÈ MÀY
         run: |
           python bot.py
